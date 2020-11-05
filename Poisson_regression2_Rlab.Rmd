@@ -1,0 +1,50 @@
+---
+title: 'R Lab: Poisson Regression'
+subtitle: 'STAT 340: Applied Regression'
+output: pdf_document
+---
+
+In this lab, you will continue exploring the Philippines household data set from the class notes. This will give you a chance to (a) identify potentially more reasonable models than those that were presented in the lecture itself and (b) address the original questions posed in the lab, which are listed below (*).
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+## Load libraries
+library(caret)
+library(ggplot2)
+library(tidyverse)
+```
+
+```{r}
+## Read in data from csv file
+fHH1 <- read_csv("https://raw.githubusercontent.com/proback/BeyondMLR/master/data/fHH1.csv")
+fHH1 <- fHH1[,-1]
+```
+
+## Poisson Regression (no overdispersion)
+
+### Examine the relationship between the age of heads of households in the Phillipines and number of people in the household, adjusting for any potential confounding variables. For each model you consider, you should check the model assumptions, including linearity for quantitative explanatory variables. This may suggest the addition of polynomial terms, for example.
+
+```{r}
+
+```
+
+
+### Choose a final model from the models you considered and justify your choice using appropriate statistical criteria. 
+
+```{r}
+
+```
+
+
+### Interpret the results of your model that you chose above in the context of the problem. 
+
+
+
+### (*) Is this association (the relationship between age of heads of households and number of people in the household) similar for less affluent households (measured by the presence of a roof made from predominantly light/salvaged materials)?
+
+```{r}
+
+```
+
+
